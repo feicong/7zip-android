@@ -1,4 +1,4 @@
-NDK=/Users/peijunbo/Library/Android/sdk/ndk/25.2.9519653
+NDK=/Users/m1/Library/Android/sdk/ndk/25.2.9519653
 
 # Only choose one of these, depending on your build machine...
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/darwin-x86_64

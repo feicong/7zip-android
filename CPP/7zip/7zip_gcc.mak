@@ -86,8 +86,8 @@ ifdef IS_MINGW
 SHARED_EXT=.dll
 LDFLAGS = -shared -DEF $(DEF_FILE) $(LDFLAGS_STATIC)
 else
-SHARED_EXT=.so
-LDFLAGS = -shared -fPIC $(LDFLAGS_STATIC)
+SHARED_EXT=
+LDFLAGS = -static -ffunction-sections -fdata-sections -Wl,--gc-sections -fPIC $(LDFLAGS_STATIC)
 CC_SHARED=-fPIC
 endif
 
